@@ -13,8 +13,6 @@ export default function(){
         agree: false,
     })
 
-    console.log(formData)
-
     function handleChange(event){
         const {name, type, value, checked} = event.target
         setFormData(prevFormData => 
@@ -57,8 +55,8 @@ export default function(){
             <h1>Fill out the form to create your account</h1>
             <input type="text" placeholder="First Name" value={formData.firstName} name="firstName" onChange={handleChange} />
             <input type="text" placeholder="Last Name" value={formData.lastName} name="lastName" onChange={handleChange} />
-            <input type="text" placeholder="Password" value={formData.password} name="password" onChange={handleChange} />
-            <input type="text" placeholder="Confirm Password" value={formData.confPass} name="confPass" onChange={handleChange} />
+            <input type="password" placeholder="Password" value={formData.password} name="password" onChange={handleChange} />
+            <input type="password" placeholder="Confirm Password" value={formData.confPass} name="confPass" onChange={handleChange} />
             <input type="email" placeholder="Email" value={formData.email} name="email" onChange={handleChange} id="email"/>
             <fieldset>
                 <legend>Gender:</legend>
