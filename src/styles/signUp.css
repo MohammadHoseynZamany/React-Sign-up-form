@@ -1,0 +1,61 @@
+.signUpForm{
+    background-color: #59C1BD;
+    position: absolute;
+    width: 90vw;
+    height: 95vh;
+    transform: translate(5%, 1%);
+    border-radius: 5%;
+    color: rgb(160, 31, 31);
+}
+
+.signUpForm > h1 {
+    text-align: center;
+}
+
+.signUpForm > input{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 5px;
+    height: 25px;
+    background-color: #CFF5E7;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.signUpForm > input:focus {
+    background-color: #A0E4CB;
+}
+
+.signUpForm > fieldset {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.signUpForm > div {
+    width: 40%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#agreeLbl{
+    display: inline-block;
+}
+
+.signUpForm > button {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color:#A0E4CB;
+    border: solid 1px;
+    width: 70px;
+    height: 30px;
+}
+
+.signUpForm > button:active {
+    background-color: rgb(165, 165, 220);
+    cursor: progress;
+}
