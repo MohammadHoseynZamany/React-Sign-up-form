@@ -1,5 +1,6 @@
 import React from "react"
 import '../styles/signUp.css'
+import { useNavigate } from "react-router-dom"
 
 export default function(){
     
@@ -12,6 +13,8 @@ export default function(){
         gender: "",
         agree: false,
     })
+
+    const navigate = useNavigate()
 
     function handleChange(event){
         const {name, type, value, checked} = event.target
@@ -46,7 +49,7 @@ export default function(){
             }
         }
         if (!error){
-            alert("Your account has been successfully created")
+            navigate("/SignUpSuccess")
         }
     }
 
